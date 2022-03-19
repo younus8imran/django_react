@@ -10,7 +10,7 @@ class Lead(models.Model):
 
 	def get_image(self):
 		if self.image:
-			return 'https://user-drf.herokuapp.com' + self.image.url
+			return self.image.url
 		return ''
 
 
