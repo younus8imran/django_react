@@ -2,5 +2,7 @@
 This is a simple demonstration of how to feed REST APIs in React js.
 ### Steps to run this project
 * Run the backend server
-* pip install -r requirements.txt
-* 
+```
+cd leads
+pip install -r requirements.txt
+```
