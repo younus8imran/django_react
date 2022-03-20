@@ -5,4 +5,14 @@ This is a simple demonstration of how to feed REST APIs in React js.
 ```
 cd leads
 pip install -r requirements.txt
+python manage.py migrate
+python manage.py runserver
+
 ```
+* Run the frontend server
+```
+cd frontend
+npm install 
+npm start
+```
+
