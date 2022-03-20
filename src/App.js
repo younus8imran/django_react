@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import "./App.css"
 
 export default function App() {
   
@@ -19,12 +20,12 @@ export default function App() {
     <div>
         {leads.map((lead) => {
             return(
-                <div key={lead.id}>
+                <div key={lead.id} className="card">
                     <h1>{lead.name}</h1>
+                    <img src={lead.get_image} alt={lead.name} />
                     <p><strong>Email: </strong>{lead.email}</p>
                     <p><strong>Age: </strong>{lead.age}</p>
-                    <img src={lead.get_image} alt={lead.name} />
-                    <p></p>
+         
                 </div>
             )
         })}
