@@ -8,7 +8,7 @@ export default function App() {
       const api = await fetch('https://user-drf.herokuapp.com/api/lead/');
       const data = await api.json();
       setLeads(data);
-      console.log(data)
+
   }
 
   useEffect(() => {
